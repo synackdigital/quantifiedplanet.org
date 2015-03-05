@@ -20,6 +20,11 @@ function body_class($classes) {
     $classes[] = 'sidebar-primary';
   }
 
+  // Add class if post-thumbnail is present
+  if(current_theme_supports('post-thumbnails') && has_post_thumbnail()) {
+    $classes[] = "has-featured-image";
+  }
+
   return $classes;
 }
 add_filter('body_class', __NAMESPACE__ . '\\body_class');
