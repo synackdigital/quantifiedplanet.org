@@ -10,5 +10,10 @@
       background-color: transparent;
       #gradient > .vertical(fade(@navbar-default-bg, 100%), fade(@navbar-default-bg, 0%));
     }
+
+    // Push down when wp-adminbar is present
+    body.has-featured-image.admin-bar & {
+      top: 32px;
+    }
   }
 }
