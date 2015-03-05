@@ -1,0 +1,14 @@
+
+.navbar-static-top {
+  @media (min-width: @grid-float-breakpoint) {
+
+    // Position above featured image
+    body.has-featured-image & {
+      position: absolute;
+      top: 0; right: 0; left: 0;
+      border-bottom-color: transparent;
+      background-color: transparent;
+      #gradient > .vertical(fade(@navbar-default-bg, 100%), fade(@navbar-default-bg, 0%));
+    }
+  }
+}
