@@ -1,6 +1,6 @@
 <?php use Roots\Sage\Titles; ?>
 
-<div class="page-header <?php the_field('title_visibility'); ?>">
+<div class="page-header">
   <h1>
     <?= Titles\title(); ?>
   </h1>
