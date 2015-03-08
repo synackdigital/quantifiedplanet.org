@@ -9,6 +9,18 @@
 @font-family-sans-serif:  'Gotham Narrow A', 'Gotham Narrow B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @normal-font-weight:      300;
 @headings-font-weight:    500;
+@font-size-base:          19px;
+@font-size-large:         round((@font-size-base * 1.3684210526));   // ~26px
+@font-size-small:         round((@font-size-base * 0.7894736842));   // ~15px
+@font-size-h1:            round((@font-size-base * 2.4210526316));   // ~46px
+@font-size-h2:            round((@font-size-base * 1.7894736842));   // ~34px
+@font-size-h3:            @font-size-large;
+@font-size-h4:            @font-size-base;
+@font-size-h5:            @font-size-base;
+@font-size-h6:            @font-size-base;
+@line-height-base:        1.3684210526; // 26/19
+@headings-line-height:    1.25;
+
 
 // Grid system
 @grid-float-breakpoint:     @screen-md-min;
