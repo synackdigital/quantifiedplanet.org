@@ -9,7 +9,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
+        <?php include(get_stylesheet_directory().'/assets/images/qplogo.svg'); ?>
+      </a>
     </div>
 
     <nav class="collapse navbar-collapse navbar-right" role="navigation">

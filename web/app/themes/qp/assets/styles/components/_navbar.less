@@ -1,4 +1,21 @@
 
+.navbar-brand {
+  padding-top: 15px;
+
+  width: 200px;
+  @media (min-width: @grid-float-breakpoint) {
+    width: 320px;
+  }
+
+  svg {
+    width: 100%;
+
+    #symbol, #word1, #word2 {
+      fill: @navbar-default-brand-color;
+    }
+  }
+}
+
 .navbar-static-top {
   @media (min-width: @grid-float-breakpoint) {
 
