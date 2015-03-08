@@ -1,9 +1,16 @@
 
+// Reset font-weight
 body {
   font-weight: @normal-font-weight;
 }
 
+// Uppercase headlines
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   text-transform: uppercase;
+}
+
+// Auto-size all SVG
+img[src$='.svg'] {
+  width: 100%;
 }

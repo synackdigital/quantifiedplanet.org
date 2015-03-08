@@ -103,7 +103,7 @@ function gallery($attr) {
     $output .= '<div class="' . $grid .'">' . $image;
 
     if (trim($attachment->post_excerpt)) {
-      $output .= '<div class="caption hidden">' . wptexturize($attachment->post_excerpt) . '</div>';
+      $output .= '<div class="caption text-center">' . wptexturize($attachment->post_excerpt) . '</div>';
     }
 
     $output .= '</div>';

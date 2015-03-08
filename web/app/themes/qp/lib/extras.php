@@ -59,4 +59,20 @@ function acf_admin_head() {
   <?php
 }
 
-add_action( 'acf/input/admin_head', __NAMESPACE__ . '\\acf_admin_head' );
+add_action('acf/input/admin_head', __NAMESPACE__ . '\\acf_admin_head');
+
+
+/**
+ * Allow SVG uploads
+ */
+
+function svg_mime_type($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', __NAMESPACE__ . '\\svg_mime_type');
+
+function fix_svg_thumb_display() {
+  echo '<style> td.media-icon img[src$=".svg"], img[src$=".svg"].attachment-post-thumbnail { width: 100% !important; height: auto !important; } </style>';
+}
+add_action('admin_head', __NAMESPACE__ . '\\fix_svg_thumb_display');

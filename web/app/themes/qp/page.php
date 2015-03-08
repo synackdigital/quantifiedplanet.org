@@ -9,10 +9,14 @@
 
     if (have_rows('page_sections')) :
       while (have_rows('page_sections')) : the_row();
-
-        if (get_row_layout() == 'textblock')
-          get_template_part('templates/acf', 'textblock');
-
+        switch (get_row_layout()) :
+          case 'textblock' :
+            get_template_part('templates/acf', 'textblock');
+            break;
+          case 'wysiwyg' :
+            get_template_part('templates/acf', 'wysiwyg');
+            break;
+          endswitch;
       endwhile;
     endif;
 
