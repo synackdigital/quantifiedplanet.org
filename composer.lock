@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8f82cba97e254bcc28624da2c296e7b5",
+    "hash": "cbcbaf9c683a00218c454f8f79c94f7b",
     "packages": [
         {
             "name": "composer/installers",
@@ -264,6 +264,26 @@
                 "environment"
             ],
             "time": "2014-10-16 14:50:21"
+        },
+        {
+            "name": "wpackagist-plugin/simple-local-avatars",
+            "version": "2.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/simple-local-avatars/",
+                "reference": "tags/2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-local-avatars.2.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/simple-local-avatars/"
         }
     ],
     "packages-dev": [],
