@@ -4,6 +4,15 @@
   margin-top: @line-height-computed;
   margin-bottom: @line-height-computed;
 
+  .title {
+    &:extend(.h3 all);
+    color: @brand-secondary;
+    border-bottom: 1px solid @hr-border;
+    margin-top: (@line-height-computed * 2);
+    margin-bottom: @line-height-computed;
+    padding-bottom: @padding-large-vertical;
+  }
+
   .layout {
     .make-xs-column(12);
     .make-sm-column(10);

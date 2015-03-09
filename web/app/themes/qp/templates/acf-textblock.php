@@ -9,7 +9,7 @@ $content = get_sub_field('content');
   <div class="layout layout-<?php the_sub_field('layout'); ?>">
 
     <?php if ($title) : ?>
-      <h1><?php echo $title; ?></h1>
+      <h1 class="title"><?php echo $title; ?></h1>
     <?php endif; ?>
 
     <?php if ($content) : ?>
