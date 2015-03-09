@@ -19,6 +19,14 @@ h1, h2, h3, h4, h5, h6,
   h5, .h5 { font-size: @font-size-h6; }
 }
 
+// Text utilities
+.text-large {
+  &:extend(.h3 all);
+}
+.text-xlarge {
+  &:extend(.h2 all);
+}
+
 // Auto-size all SVG
 img[src$='.svg'] {
   width: 100%;
