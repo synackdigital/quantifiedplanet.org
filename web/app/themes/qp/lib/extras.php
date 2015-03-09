@@ -61,11 +61,17 @@ function acf_admin_head() {
 
 add_action('acf/input/admin_head', __NAMESPACE__ . '\\acf_admin_head');
 
+/**
+ * Disable the default editor for pages
+ */
+function remove_editor() {
+  remove_post_type_support('page', 'editor');
+}
+add_action('admin_init', __NAMESPACE__ . '\\remove_editor');
 
 /**
  * Allow SVG uploads
  */
-
 function svg_mime_type($mimes) {
   $mimes['svg'] = 'image/svg+xml';
   return $mimes;
