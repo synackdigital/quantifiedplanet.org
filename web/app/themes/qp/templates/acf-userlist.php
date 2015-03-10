@@ -8,7 +8,7 @@ $users = get_sub_field('content');
 <section class="acf acf-userlist">
   <div class="layout layout-<?php the_sub_field('layout'); ?>">
 
-    <?php if ($title) : ?>
+    <?php if (1===0 && $title) : ?>
       <h1 class="title"><?php echo $title; ?></h1>
     <?php endif; ?>
 
