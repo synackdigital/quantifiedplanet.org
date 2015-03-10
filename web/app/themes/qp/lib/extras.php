@@ -82,3 +82,11 @@ function fix_svg_thumb_display() {
   echo '<style> td.media-icon img[src$=".svg"], img[src$=".svg"].attachment-post-thumbnail { width: 100% !important; height: auto !important; } </style>';
 }
 add_action('admin_head', __NAMESPACE__ . '\\fix_svg_thumb_display');
+
+/**
+ * Function for returning a user avatar url
+ */
+function get_avatar_url($get_avatar){
+  preg_match("/src='(.*?)'/i", $get_avatar, $matches);
+  return $matches[1];
+}
