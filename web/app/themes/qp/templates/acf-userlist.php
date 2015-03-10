@@ -18,15 +18,15 @@ $users = get_sub_field('content');
         'user_avatar'     => null
       )); ?>
 
-        <div class="col-xs-6 col-sm-3">
-          <div class="thumbnail">
-            <?php echo get_avatar($user['ID'], 300); ?>
-            <p class="caption">
-              <span class="name"><?php echo $user['display_name']; ?></span>
-              <span class="small"><?php echo $user['user_description']; ?></span>
-            </p>
-          </div>
+      <div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0">
+        <div class="thumbnail">
+          <?php echo get_avatar($user['ID'], 300); ?>
+          <p class="caption">
+            <span class="name"><?php echo $user['display_name']; ?></span>
+            <span class="small"><?php echo $user['user_description']; ?></span>
+          </p>
         </div>
+      </div>
 
     <?php endforeach; ?>
 
