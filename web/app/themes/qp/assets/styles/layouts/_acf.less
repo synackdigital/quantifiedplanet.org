@@ -43,3 +43,20 @@
     .make-lg-column-offset(4);
   }
 }
+
+.acf-userlist {
+
+  .name {
+    display: block;
+    border-bottom: 1px solid @hr-border;
+    margin-top: @line-height-computed;
+    margin-bottom: @padding-large-vertical;
+    padding-bottom: @padding-base-vertical;
+    text-align: center;
+    font-weight: @headings-font-weight;
+  }
+
+  .avatar {
+    &:extend(.img-circle all);
+  }
+}
