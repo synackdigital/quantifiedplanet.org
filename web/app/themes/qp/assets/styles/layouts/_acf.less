@@ -1,52 +1,60 @@
 
+// ACF Layout modules
+//
+
+
+// Layout base
 .acf {
   .make-row();
   padding-top: @line-height-computed;
   padding-bottom: @line-height-computed;
 
-  .title {
+  .headline {
     &:extend(.h3 all);
-    color: @brand-secondary;
-    border-bottom: 1px solid @hr-border;
-    margin-top: (@line-height-computed * 2);
-    margin-bottom: @line-height-computed;
-    padding-bottom: @padding-large-vertical;
+    text-align: center;
+    margin-top: (@line-height-computed * -1);
+    margin-bottom: (@line-height-computed * 2);
+    padding-top: @line-height-computed;
   }
 
-  .layout-full {
-    .make-xs-column(12);
-    .make-sm-column(10);
-    .make-sm-column-offset(1);
-  }
-
-  .layout-left,
-  .layout-center,
-  .layout-right {
-    .make-xs-column(12);
-    .make-sm-column(10);
-    .make-md-column(8);
-    .make-lg-column(6);
-  }
-
-  .layout-left {
-    .make-md-column-offset(1);
-    .make-lg-column-offset(2);
-  }
-  .layout-center {
-    .make-sm-column-offset(1);
-    .make-md-column-offset(2);
-    .make-lg-column-offset(3);
-  }
-  .layout-right {
-    .make-sm-column-offset(2);
-    .make-md-column-offset(3);
-    .make-lg-column-offset(4);
+  &.fade-background {
+    #gradient > .horizontal-three-colors(@start-color: @body-bg; @mid-color: @gray-lighter; @end-color: @body-bg);
   }
 }
 
-.acf-userlist {
+// Layout alignments
+.layout-full {
+  .make-xs-column(12);
+  .make-sm-column(10);
+  .make-sm-column-offset(1);
+}
 
-  #gradient > .horizontal-three-colors(@start-color: @body-bg; @mid-color: @gray-lighter; @end-color: @body-bg);
+.layout-left,
+.layout-center,
+.layout-right {
+  .make-xs-column(12);
+  .make-sm-column(10);
+  .make-md-column(8);
+  .make-lg-column(6);
+}
+
+.layout-left {
+  .make-md-column-offset(1);
+  .make-lg-column-offset(2);
+}
+.layout-center {
+  .make-sm-column-offset(1);
+  .make-md-column-offset(2);
+  .make-lg-column-offset(3);
+}
+.layout-right {
+  .make-sm-column-offset(2);
+  .make-md-column-offset(3);
+  .make-lg-column-offset(4);
+}
+
+// Layout types
+.acf-userlist {
 
   .name {
     display: block;
