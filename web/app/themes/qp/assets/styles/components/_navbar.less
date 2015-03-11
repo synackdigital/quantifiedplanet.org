@@ -4,14 +4,17 @@
 
   width: 200px;
   @media (min-width: @grid-float-breakpoint) {
-    width: 320px;
+    width: 400px;
   }
 
   svg {
     width: 100%;
 
-    #symbol, #word1, #word2 {
-      fill: @navbar-default-brand-color;
+    #symbol, #words {
+      * {
+        fill: @navbar-default-brand-color;
+        stroke: @navbar-default-brand-color;
+      }
     }
   }
 }
