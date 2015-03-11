@@ -16,18 +16,19 @@ $fade_background_class = (get_sub_field('fade_background')) ? 'fade-background' 
 
   <div class="layout layout-<?php the_sub_field('layout'); ?>">
 
-    <?php if ($users) : ?>
+    <?php if ($users) : foreach ($users as $key => $user) : ?>
+
+    <?php $user = wp_parse_args( $user, array(
+      'display_name'    => null,
+      'user_decription' => '',
+      'user_avatar'     => null
+    )); ?>
+
+    <?php if ($key%3 === 0) : ?>
     <div class="row">
+    <?php endif; ?>
 
-    <?php foreach ($users as $user) : ?>
-
-      <?php $user = wp_parse_args( $user, array(
-        'display_name'    => null,
-        'user_decription' => '',
-        'user_avatar'     => null
-      )); ?>
-
-      <div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0">
+      <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
         <div class="thumbnail">
           <?php echo get_avatar($user['ID'], 300); ?>
           <p class="caption">
@@ -37,9 +38,11 @@ $fade_background_class = (get_sub_field('fade_background')) ? 'fade-background' 
         </div>
       </div>
 
-    <?php endforeach; ?>
+      <?php if ($key !== 0 && ($key+1)%3 === 0) : ?>
+      </div>
+      <?php endif; ?>
 
-  </div>
-  <?php endif; ?>
+    <?php endforeach; endif; ?>
+
   </div>
 </section>
