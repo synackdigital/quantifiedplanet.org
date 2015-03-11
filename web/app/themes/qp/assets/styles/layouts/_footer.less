@@ -1,4 +1,26 @@
 .content-info {
   background-color: @gray-darker;
-  color: white;
+  color: @gray-light;
+
+  padding-top: (@line-height-computed * 2);
+  padding-bottom: (@line-height-computed * 2);
+}
+
+.footer-brand {
+
+  display: inline-block;
+  float: left;
+  margin-right: @padding-large-horizontal;
+  width: 60px;
+
+  svg {
+    width: 100%;
+
+    #symbol {
+      * {
+        fill: @gray-light;
+        stroke: @gray-light;
+      }
+    }
+  }
 }
