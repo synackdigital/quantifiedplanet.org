@@ -9,4 +9,21 @@
   img {
     .img-responsive;
   }
+
+  // Caption
+  position: relative;
+  .caption {
+    padding: 0 @padding-base-horizontal;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-color: fade(black, 20%);
+    color: fade(white, 70%);
+
+    font-size: @font-size-small;
+    text-align: center;
+  }
 }
