@@ -3,12 +3,14 @@
 <header class="banner navbar navbar-default navbar-static-top" role="banner">
   <div class="container">
     <div class="navbar-header">
+      <?php if (has_nav_menu('primary_navigation')) : ?>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <?php endif; ?>
       <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
         <?php include(get_stylesheet_directory().'/assets/images/qplogo.svg'); ?>
       </a>
