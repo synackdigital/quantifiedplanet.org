@@ -16,6 +16,9 @@ wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 wp-content/cache/*
 wp-content/cache/supercache/*
+wp-content/plugins/*
+wp-content/themes/*
+!wp-content/themes/qp/
 
 # wpengine specific
 .smushit-status
