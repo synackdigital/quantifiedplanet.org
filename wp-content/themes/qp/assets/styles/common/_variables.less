@@ -1,0 +1,57 @@
+// Grid settings
+@main-sm-columns:       @grid-columns;
+@sidebar-sm-columns:    4;
+
+// Colors
+@gray-darker:           #2e2e2e;
+@gray-dark:             mix(@gray, @gray-darker);
+@gray:                  #6f6d6e;
+@gray-light:            mix(@gray, @gray-lighter);
+@gray-lighter:          #e4e4e4;
+@brand-primary:         #36bfae;
+@brand-secondary:       #2ca2dc;
+@brand-tertiary:        #fabd0c;
+
+// Typography
+@font-family-sans-serif:  'Gotham Narrow A', 'Gotham Narrow B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@normal-font-weight:      300;
+@headings-font-weight:    500;
+@font-size-base:          19px;
+@font-size-large:         round((@font-size-base * 1.3684210526));   // ~26px
+@font-size-small:         round((@font-size-base * 0.7894736842));   // ~15px
+@font-size-h1:            round((@font-size-base * 2.4210526316));   // ~46px
+@font-size-h2:            round((@font-size-base * 1.7894736842));   // ~34px
+@font-size-h3:            @font-size-large;
+@font-size-h4:            @font-size-base;
+@font-size-h5:            @font-size-base;
+@font-size-h6:            @font-size-base;
+@line-height-base:        1.3684210526; // 26/19
+@headings-line-height:    1.25;
+
+
+// Grid system
+@grid-float-breakpoint:     @screen-md-min;
+
+// Buttons
+@btn-font-weight:           @normal-font-weight;
+
+// Navbar
+@navbar-height:                         100px;
+@navbar-default-color:                  white;
+@navbar-default-bg:                     black;
+@navbar-default-border:                 @navbar-default-bg;
+@navbar-default-link-color:             @navbar-default-color;
+@navbar-default-link-hover-color:       @link-hover-color;
+@navbar-default-link-active-color:      @link-color;
+@navbar-default-link-disabled-color:    @text-muted;
+@navbar-default-toggle-hover-bg:        transparent;
+@navbar-default-toggle-icon-bar-bg:     @navbar-default-color;
+@navbar-default-toggle-border-color:    transparent;
+
+// Thumbnails
+@thumbnail-padding:           0;
+@thumbnail-bg:                transparent;
+@thumbnail-border:            transparent;
+@thumbnail-border-radius:     none;
+@thumbnail-caption-color:     @text-color;
+@thumbnail-caption-padding:   0;

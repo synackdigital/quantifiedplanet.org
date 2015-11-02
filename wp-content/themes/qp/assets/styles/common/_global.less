@@ -1,0 +1,37 @@
+
+// Reset font-weight
+body {
+  font-weight: @normal-font-weight;
+}
+
+// Uppercase headlines
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  text-transform: uppercase;
+}
+
+// Responsive headlines
+@media (max-width: @screen-sm) {
+  h1, .h1 { font-size: @font-size-h2; }
+  h2, .h2 { font-size: @font-size-h3; }
+  h3, .h3 { font-size: @font-size-h4; }
+  h4, .h4 { font-size: @font-size-h5; }
+  h5, .h5 { font-size: @font-size-h6; }
+}
+
+// Text utilities
+.text-large {
+  &:extend(.h3 all);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.text-xlarge {
+  &:extend(.h2 all);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// Auto-size all SVG
+img[src$='.svg'] {
+  width: 100%;
+}
