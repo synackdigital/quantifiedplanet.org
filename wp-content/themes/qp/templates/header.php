@@ -12,7 +12,7 @@
       </button>
       <?php endif; ?>
       <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
-        <?php include(get_stylesheet_directory_uri().'/assets/images/qplogo.svg'); ?>
+        <?php include(get_bloginfo('stylesheet_directory').'/assets/images/qplogo.svg'); ?>
       </a>
     </div>
 
