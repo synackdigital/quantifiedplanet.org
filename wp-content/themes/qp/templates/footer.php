@@ -1,0 +1,22 @@
+<footer class="content-info" role="contentinfo">
+  <div class="container">
+
+    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+      <div class="footer-brand">
+        <svg version="1.1" id="qpsymbol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="-37.7 492.2 75.4 135.5" enable-background="new -37.7 492.2 75.4 135.5" xml:space="preserve">
+          <g id="symbol">
+            <path stroke="#000000" stroke-width="0.1" stroke-miterlimit="10" d="M-3.5,593.9c-18.9,0-34.1-15-34.1-33.9
+              c0-18.9,15.3-33.9,33.9-33.9s34.1,15.3,34.1,33.9C30.4,578.6,15.1,593.9-3.5,593.9z M20,560c0-13.2-10.6-23.8-23.8-23.8
+              s-23.8,10.6-23.8,23.8c0,13.2,10.6,23.8,23.8,23.8S20,573.2,20,560z"/>
+            <rect x="-8.7" y="492.2" width="10.3" height="135.5"/>
+            <rect x="10" y="549.2" transform="matrix(-0.707 0.7072 -0.7072 -0.707 433.1462 972.1718)" width="10.3" height="53.3"/>
+          </g>
+        </svg>
+      </div>
+      <p class="strapline"><?php the_field('strapline', 'option'); ?></p>
+      <p class="copyright small"><?php the_field('copyright', 'option'); ?></p>
+    </div>
+
+  </div>
+</footer>
